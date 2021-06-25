@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Load Fonts -- https://fonts.google.com/specimen/Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <!-- Load Icons -- https://material.io/resources/icons/ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Your Courses</h2>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-tabs" id="to-do" onClick="changeStyleToDo()">
+                    <a>
+                        To Do &nbsp;
+                        <div class="tab-count" id="tab-count-to-do">24</div>
+                    </a>
+                </li>
+                <li class="nav-tabs" id="progress" onClick="changeStyleProgress()">
+                    <a>
+                        In Progress &nbsp;
+                        <div class="tab-count" id="tab-count-progress">8</div>
+                    </a>
+                </li>
+                <li class="nav-tabs" id="completed" onClick="changeStyleCompleted()">
+                    <a>
+                        Completed &nbsp;
+                        <div class="tab-count" id="tab-count-completed">5</div>
+                    </a>
+                </li>
+                <li class="nav-tabs" id="all" onClick="changeStyleAll()">
+                    <a>
+                        All courses &nbsp;
+                        <div class="tab-count" id="tab-count-all">89</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <section>
+        <div class="search-and-sort">
+            <div class="search-field">
+                <span id="search-icon" class="material-icons md-18">search</span>
+                <input class="input-field" type="text" placeholder="Search courses">
+            </div>
+            <p class="search-match"><b>23</b> of 98 courses match your search</p>
+            <p class="sort"><span class="material-icons md-18">sort</span>Sort by</p>
+            <select class="sort-options">
+                <option value="date-enrolled">Date Enrolled</option>
+            </select>
+            <span id="expand-options" class="material-icons md-18">expand_more</span>
+        </div>
+    </section>
+    <section class="courses">
+        <div class="course-card">
+            <img id="brutalist-architecture-progress" class="card-img" src="https://images.unsplash.com/photo-1608679760288-11517e0d4ef6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhhbmQlMjBob2xkaW5nJTIwY2l0cnVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Hand holding fruit">
+            </img>
+            <div class="time-remaining">
+                <i class="material-icons md-18">today</i>&nbsp; Due in <b> &nbsp; 6 days</b>
+            </div>
+            <div class="card-info">
+                <h3>Brutalist Architecture and the Human Response</h3>
+                <p>Learn the secrets of the hand model industry in this 4 part course. Here's some more text and some more.</p>
+            </div>
+            <button class="course-progress-button">View Progress</button>
+            <button class="resume-course-button">Resume</button>
+        </div>
+        <div class="course-card">
+            <img id="surfing-safety-progress" class="card-img" src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3VyZmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Surfer riding a wave"></img>
+            <div class="card-info">
+                <h3>Surfing Safety</h3>
+                <p>Stay safe while getting barreled this summer. We'll look at wave etiqute, how to rock-off safely and how to properly secure your umberella.</p>
+            </div>
+            <button class="course-progress-button">View Progress</button>
+            <button class="resume-course-button">Resume</button>
+        </div>
+        <div class="course-card">
+            <img id="berries-progress" class="card-img" src="https://images.unsplash.com/photo-1530259152377-3a014e1092e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym93bCUyMG9mJTIwYmVycmllc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Bowl of berries"></img>
+            <div class="card-info">
+                <h3>Delicious berries</h3>
+                <p>Everyone loves berries, so let's learn about strawberries, raspberries, gooseberries and Huckleberry Finn.</p>
+            </div>
+            <button class="course-progress-button">View Progress</button>
+            <button class="resume-course-button">Resume</button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+
+</body>
+
+</html>
